@@ -20,7 +20,7 @@ public class Pawn extends ChessPiece {
         }
 
         int difference = Math.abs(toLine - line);
-        if ((color == "White" && line == 1 ) || (color == "Black" && line == 6)) {
+        if ((color.equals("White") && line == 1 ) || (color.equals("Black") && line == 6)) {
 
             if (difference > 2 || difference < 1) {
                 return false;
